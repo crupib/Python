@@ -64,7 +64,7 @@ lasio==0.29
 MarkupSafe==1.1.1
 matplotlib==3.4.2
 meshio==4.4.6
-mistune==0.8.4
+mistune==2.0.3
 nbclassic==0.2.7
 nbclient==0.5.3
 nbconvert==6.0.7
