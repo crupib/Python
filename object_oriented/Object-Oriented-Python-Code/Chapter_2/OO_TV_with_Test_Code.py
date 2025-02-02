@@ -98,3 +98,11 @@ oTV.showInfo()
 oTV.setChannel(11)
 oTV.mute()
 oTV.showInfo()
+# Change the channel to 20, unmute the sound, show status
+oTV.setChannel(20)
+oTV.mute()
+oTV.showInfo()
+# Change the channel to 30, unmute the sound, show status
+oTV.setChannel(30)
+oTV.mute()
+oTV.showInfo()

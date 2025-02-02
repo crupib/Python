@@ -1,7 +1,7 @@
 # Non-OOP Bank
 # Version 5
 # Any number of accounts - with a list of dictionaries
-
+import getpass as gp
 accountsList = []
 
 def newAccount(aName, aBalance, aPassword):
@@ -84,7 +84,7 @@ while True:
         print('Get Balance:')
         userAccountNumber = input('Please enter your account number: ')
         userAccountNumber = int(userAccountNumber)
-        userPassword = input('Please enter the password: ')
+        userPassword = gp.getpass('Please enter the password: ')
         theBalance = getBalance(userAccountNumber, userPassword)
         if theBalance is not None:
             print('Your balance is:', theBalance)
@@ -95,7 +95,7 @@ while True:
         userAccountNumber = int(userAccountNumber)
         userDepositAmount = input('Please enter amount to deposit: ')
         userDepositAmount = int(userDepositAmount)
-        userPassword = input('Please enter the password: ')
+        userPassword = gp.getpass('Please enter the password: ')
 
         newBalance = deposit(userAccountNumber, userDepositAmount, userPassword)
         if newBalance is not None:
@@ -106,7 +106,7 @@ while True:
         userName = input('What is your name? ')
         userStartingAmount = input('What is the amount of your initial deposit? ')
         userStartingAmount = int(userStartingAmount)
-        userPassword = input('What password would you like to use for this account? ')
+        userPassword = gp.getpass('What password would you like to use for this account? ')
 
         userAccountNumber = len(accountsList)
         newAccount(userName, userStartingAmount, userPassword)
@@ -127,7 +127,7 @@ while True:
         userAccountNumber = int(userAccountNumber)
         userWithdrawAmount = input('Please enter the amount to withdraw: ')
         userWithdrawAmount = int(userWithdrawAmount)
-        userPassword = input('Please enter the password: ')
+        userPassword = gp.getpass('Please enter the password: ')
  
         newBalance = withdraw(userAccountNumber, userWithdrawAmount, userPassword)
         if newBalance is not None:

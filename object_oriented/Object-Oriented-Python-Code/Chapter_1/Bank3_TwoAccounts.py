@@ -1,7 +1,7 @@
 # Non-OOP
 # Bank 3
 # Two accounts
-
+import getpass
 account0Name = ''
 account0Balance = 0
 account0Password = ''
@@ -143,7 +143,7 @@ while True:
         print('Get Balance:')
         userAccountNumber = input('Please enter your account number: ')
         userAccountNumber = int(userAccountNumber)
-        userPassword = input('Please enter the password: ')
+        userPassword = getpass.getpass('Please enter the password: ')
         theBalance = getBalance(userAccountNumber, userPassword)
         if theBalance is not None:
             print('Your balance is:', theBalance)
@@ -154,7 +154,7 @@ while True:
         userAccountNumber = int(userAccountNumber)
         userDepositAmount = input('Please enter amount to deposit: ')
         userDepositAmount = int(userDepositAmount)
-        userPassword = input('Please enter the password: ')
+        userPassword = getpass.getpass('Please enter the password: ')
         newBalance = deposit(userAccountNumber, userDepositAmount, userPassword)
         if newBalance is not None:
             print('Your new balance is:', newBalance)
@@ -164,7 +164,7 @@ while True:
         userName = input('What is your name? ')
         userStartingAmount = input('How much money to have to start you account with? ')
         userStartingAmount = int(userStartingAmount)
-        userPassword = input('What password would you like to use for this account? ')
+        userPassword = getpass.getpass('What password would you like to use for this account? ')
 
         newAccount(nAccounts, userName, userStartingAmount, userPassword)
         print('Your new account number is:', nAccounts)
@@ -183,7 +183,7 @@ while True:
         userAccountNumber = int(userAccountNumber)
         userWithdrawAmount = input('Please enter the amount to withdraw: ')
         userWithdrawAmount = int(userWithdrawAmount)
-        userPassword = input('Please enter the password: ')
+        userPassword = getpass.getpass('Please enter the password: ')
  
         newBalance = withdraw(userAccountNumber, userWithdrawAmount, userPassword)
         if newBalance is not None:

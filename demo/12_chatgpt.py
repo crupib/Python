@@ -6,7 +6,7 @@ import openai
 openai.api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Set up the model (more models, visit https://beta.openai.com/playground)
-model_engine = "text-davinci-003"
+model_engine = "GPT-3"
 
 
 # Define a function that sends a message to ChatGPT

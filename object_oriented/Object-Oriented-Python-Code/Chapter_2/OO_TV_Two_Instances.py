@@ -5,7 +5,7 @@ class TV():
         self.isOn = False
         self.isMuted = False
         # Some default list of channels
-        self.channelList = [2, 4, 5, 7, 9, 11, 20, 36, 44, 54, 65]  
+        self.channelList = [1, 2, 4, 5, 7, 9, 11, 20, 36, 44, 54, 65]  
         self.nChannels = len(self.channelList)
         self.channelIndex = 0
         self.VOLUME_MINIMUM = 0  # constant
